@@ -1,0 +1,85 @@
+section.book_appointment .row {
+    justify-content: center;
+}
+.book_appointment_area {
+    padding: 30px;
+    box-shadow: 0px 20px 30px 0px rgb(26 46 85 / 10%);
+    background-color: #fff;
+    border-radius: 4px;
+}
+section.book_appointment {
+    margin-top: -50px;
+    position: relative;
+    z-index: 99;
+}
+.book_appointment_area b {
+    font-size: 36px;
+    line-height: 1;
+    margin-bottom: 15px;
+    display: block;
+}
+.book_appointment_content p {
+    margin-bottom: 0;
+    color: var(--font_color);
+}
+.icon {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.icon span {
+    display: inline-block;
+    width: 35px;
+}
+.icon span img {
+    width: 100%;
+}
+.book_appointment_area .HOVER{
+    box-shadow: 0px 20px 30px 0px rgb(26 46 85 / 10%)
+}
+.book_appointment_area .btn:hover {
+    background-color: #fff;
+    transition: 0.5s;
+}
+#formappointment_mail {
+    border-radius: 4px;
+    height: 50px;
+    border: 2px solid var(--theme_green);
+    box-shadow: none!important;
+    padding-right: 160px;
+}
+form.appointment_form {
+    position: relative;
+}
+.get_app_btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50px;
+    font-weight: 600;
+}
+.quick_notes_listing {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+.quick_notes span {
+    background-color : #def7ec;
+    display: inline-flex;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: var(--theme_green);
+    align-items: center;
+    justify-content: center;
+}
+.quick_notes_listing li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}

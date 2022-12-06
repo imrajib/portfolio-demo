@@ -1,0 +1,32 @@
+.section_title h6 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 8px;
+    text-align: center;
+    margin-bottom: 0;
+    color: var(--theme_green);
+}
+.justify-center {
+    justify-content: center;
+}
+.section_title b {
+    font-size: 32px;
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+    line-height: 1;
+    font-weight: 300;
+}
+.section_title b span {
+    font-weight: 700;
+}
+.section_title p {
+    text-align: center;
+    font-size: 14px;
+    width: 80%;
+    margin: 0 auto;
+}
+.section_title {
+    margin-bottom: 50px;
+}

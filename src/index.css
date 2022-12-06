@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&family=Work+Sans:wght@100;300;400;500;600;700;800;900&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Work Sans', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +10,71 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+
+:root {
+  --theme_color : #1357a8;
+  --theme_white : #fff;
+  --theme_green : #00caab;
+  --theme_black : #000000;
+  --font_color : #2c3744;
+}
+
+
+.HOVER {
+  --width: 100%;
+  --time: 0.7s;
+  position: relative;
+  display: inline-block;
+  padding: 6px 25px;
+  color: white;
+  background: #222;
+  overflow: hidden;
+  border-radius: 4px !important;
+  text-decoration: none;
+  border: none !important;
+  outline: none !important;
+}
+.HOVER span {
+  position: absolute;
+  display: block;
+  content: "";
+  z-index: 0;
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  transition: width var(--time), padding-top var(--time);
+}
+.HOVER text {
+  position: relative;
+  z-index: 5;
+  transition: color var(--time);
+}
+.HOVER:hover span {
+  width: calc(var(--width) * 2.25);
+  padding-top: calc(var(--width) * 2.25);
+}
+.HOVER:hover text {
+  color: #222;
+}
+.white_btn span {
+  background-color: var(--theme_green);
+}
+.HOVER.white_btn {
+  background-color: var(--theme_white);
+  color: var(--theme_black);
+}
+.HOVER.white_btn:hover text {
+  color: var(--theme_white);
+}
+.HOVER.green_btn {
+  background-color: var(--theme_green);
+  color: var(--theme_white);
+}
+.green_btn span {
+  background-color: var(--theme_white);
 }

@@ -1,0 +1,42 @@
+.banner_slider {
+    position: relative;
+}
+.banner_overley {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    left: 0;
+}
+.banner_overley b {
+    color: var(--theme_green);
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 15px;
+    display: block;
+}
+.banner_overley h1 {
+    color: var(--theme_white);
+    font-size: 62px;
+    font-weight: 600;
+}
+.banner_overley span {
+    color: var(--theme_white);
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    margin: 30px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.larnmore {
+    padding: 10px 30px;
+}
+.larnmore.HOVER text {
+    position: relative;
+    z-index: 5;
+    transition: color var(--time);
+    font-weight: 700;
+}
+.banner_slider .owl-dots {
+    display: none;
+}
